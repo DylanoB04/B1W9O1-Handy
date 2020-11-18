@@ -2,3 +2,26 @@
 	font-family: archivo; 
 	src: url('archivo-regular.ttf');
 }
+.pagina1 {
+	width: 1000px;
+	height: auto;
+	margin: 0 auto;
+}
+#banner-1, #banner-2, #banner-3 {
+	padding: 50px 0 50px 0;
+}
+#banner-1 {
+	padding-right: 50px; 
+}
+#banner-3 {
+	padding-left: 50px;
+}
+.bar {
+	background-color: #ffe718;
+	text-align: center;
+	margin-bottom: 100px;
+	width: 100%;
+}
+.footer-2 {
+	text-align: right;
+}
