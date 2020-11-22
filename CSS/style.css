@@ -7,21 +7,19 @@
 	height: auto;
 	margin: 0 auto;
 }
-#banner-1, #banner-2, #banner-3 {
-	padding: 50px 0 50px 0;
+.logo {
+
 }
-#banner-1 {
-	padding-right: 50px; 
+ul {
+	font-size: 12px;
+	width: 950px;
+	padding: 15px;
+	background-color: #222931;
+	position: absolute;
+	list-style-type: none;
 }
-#banner-3 {
-	padding-left: 50px;
-}
-.bar {
-	background-color: #ffe718;
-	text-align: center;
-	margin-bottom: 100px;
-	width: 100%;
-}
-.footer-2 {
-	text-align: right;
+li {
+	color: white;
+	display: inline;
+	padding-left: 20px;
 }
