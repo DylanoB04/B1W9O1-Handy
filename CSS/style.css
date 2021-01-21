@@ -1,25 +1,346 @@
-@font-face {
-	font-family: archivo; 
-	src: url('archivo-regular.ttf');
+*{
+    margin: 0%;
+    padding: 0%;
 }
-.pagina1 {
-	width: 1000px;
-	height: auto;
-	margin: 0 auto;
-}
-.logo {
 
+body{
+    overflow-x: hidden;
+    line-height: 24px;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
 }
-ul {
-	font-size: 12px;
-	width: 950px;
-	padding: 15px;
-	background-color: #222931;
-	position: absolute;
-	list-style-type: none;
+
+.container{
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
 }
-li {
-	color: white;
-	display: inline;
-	padding-left: 20px;
+
+.logo{
+    margin: 20px;
 }
+
+nav{
+    background-color: #222931;
+    font-size: 12px;
+    width: 950px;
+    margin: 0 auto;
+}
+
+.list{
+    margin-left: 20px;
+}
+
+.dropNavItem, .navItem{
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+.dropNavItem a:hover{
+    background-color: #ffe718;
+}
+
+.navItem:hover{
+    background-color: #ffe718 ;
+    cursor: pointer;
+}
+
+.navItem>*{
+    color: white;
+    text-decoration: none;
+}
+
+.dropContainer>*>*{
+    color: white;
+    text-decoration: none;
+}
+
+.dropNavItem:hover .dropContainer{
+    display: block;
+}
+
+.dropText{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+
+.dropText img{
+    display: inline-block;
+}
+
+.dropContainer{
+    position: absolute;
+    display: none;
+    list-style: none;
+    font-size: 16px;
+    left: 0;
+    top: 100%;
+    width: 150px;
+}
+
+.dropContainer li{
+    background-color: #222931;
+    padding: 0 10px;
+}
+
+.dropContainer li:hover{
+    background-color: #ffe718;
+}
+
+.headerImg{
+    position: relative;
+    z-index: -1;
+    width: 100vw;
+    top: -30px;
+    left: calc(-50vw + 50%);
+}
+
+.banner{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.bnr1, .bnr2, .bnr3{
+    width: 300px;
+    height: 210px;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.bnr1{
+    background-image: url(../img/banner-1.jpg);
+}
+
+.bnr2{
+    background-image: url(../img/banner-2.jpg);
+}
+
+.bnr3{
+    background-image: url(../img/banner-3.jpg);
+}
+
+.bnr1Hover, .bnr2Hover, .bnr3Hover{
+    background-color: rgba(34, 41, 49, 0.8);
+    color: white;
+    opacity: 0;
+    text-align: center;
+    line-height: 210px;
+    text-transform: uppercase;
+    width: 300px;
+    height: 210px;
+}
+
+.bnr1Hover:hover, .bnr2Hover:hover, .bnr3Hover:hover{
+    opacity: 1;
+}
+
+.ribbon{
+    position: relative;
+    background-color: #ffe718;
+    justify-content: center;
+    display: flex;
+    padding: 40px;
+    margin-top: 70px;
+    width: 100vw;
+    left: calc(-50vw + 50%);
+    font-weight: 700;
+    font-size: 34px;
+}
+
+.ribbon div h2{
+    font-size: 34px;
+}
+
+.ribbon div span{
+    font-size: 16px;
+}
+
+.ribbon div{
+    width: 1100px;
+    position: relative;
+}
+
+.ribbon div>*{
+    display: inline-block;
+}
+
+.ribbon div button{
+    position: absolute;
+    text-transform: uppercase;
+    right: 90px;
+    border: none;
+    border-radius: 0%;
+    padding: 10px 40px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.ribbon div button:hover{
+    background-color: #222931;
+    color: white;
+}
+
+.ribbon div p{
+    position: relative;
+    left: 20px;
+}
+
+.footerImg{
+    position: relative;
+    top: -30px;
+    left: calc(-50vw + 50%);
+    width: 100vw;
+    z-index: -1;
+    margin-top: 100px;
+}
+
+.banner2{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    top: -80px;
+    color: #222931;
+}
+
+.banner2Div{
+    background-color: #ffe718;
+    display: flex;
+    width: 300px;
+    height: 75px;
+    padding: 20px;
+    margin: 0 15px;
+}
+
+.banner2Div>div{
+    display: flex;
+    flex-direction: column;
+}
+
+.banneer2Div div h3{
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.banner2Div div span{
+    font-size: 14px;
+}
+
+.icon {
+    font-size: 50px;
+    margin: 10px 20px 10px 10px;
+}
+
+.banner2Div:hover{
+    color: white;
+    background-color: #222931;
+    cursor: pointer;
+}
+
+.bottom{
+    margin-top: 70px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.bottom h3{
+    font-size: 24px;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+.bottom span, .bottom p{
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.info{
+    width: 500px;
+}
+
+.contactList{
+    color: #aeb6be;
+    list-style: none;
+}
+
+.contactList li{
+    display: flex;
+}
+
+.contactList li i{
+    font-size: 20px;
+    margin: 10px;
+}
+
+.contactList li>span{
+    line-height: 40px;
+}
+
+.address{
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    position: relative;
+    background-color: #222931;
+    color: white;
+    padding: 50px;
+    margin-top: 70px;
+    width: 100vw;
+    left: calc(-50vw + 50%);
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+footer span{
+    position: absolute;
+    line-height: 60px;
+    right: 300px;
+    top: 20px;
+}
+
+.bannerPage2{
+    padding: 30px;
+}
+
+.bannerPage2 a{
+    text-decoration: none;
+}
+
+.bannerPage2 h2{
+    margin: 40px 0px 20px 0px;
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.infoText{
+    position: relative;
+    color: #ffe718;
+}
+
+.infoContainer{
+    display: none;
+    z-index: 1;
+    background-color: #aeb6be;
+    font-size: 12px;
+    font-weight: 400;
+    color: white;
+    width: 200px;
+    padding: 10px;
+}
+
+.infoText:hover .infoContainer{
+    display: block;
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+}
+
